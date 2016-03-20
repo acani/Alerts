@@ -79,9 +79,9 @@
 		D29E73A01C9DCD4D0098021A /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
-				D29E73A31C9DCD4D0098021A /* Info.plist */,
 				D24DD6DD1C9E2E0C0060A9A6 /* UIAlertController.swift */,
 				D29E73B81C9DCD6F0098021A /* UIViewController.swift */,
+				D29E73A31C9DCD4D0098021A /* Info.plist */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -89,10 +89,10 @@
 		D29E73AC1C9DCD4D0098021A /* AlertsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D29E73AF1C9DCD4D0098021A /* Info.plist */,
 				D24DD6E11C9E33880060A9A6 /* Helpers.swift */,
 				D29E73AD1C9DCD4D0098021A /* UIAlertControllerTests.swift */,
 				D24DD6DF1C9E2E4D0060A9A6 /* UIViewControllerTests.swift */,
+				D29E73AF1C9DCD4D0098021A /* Info.plist */,
 			);
 			path = AlertsTests;
 			sourceTree = "<group>";
