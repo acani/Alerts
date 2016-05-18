@@ -8,7 +8,19 @@ extension UIAlertController {
     }
 
     public static func alertError(error: NSError, handler: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
-        return UIAlertController.alert(title: error.localizedDescription, message: error.localizedRecoverySuggestion, handler: handler)
+        let title = error.userInfo["UIAlertControllerTitle"] as! String?
+        var errorMessage: String?
+        if let errorDescription = error.userInfo[NSLocalizedDescriptionKey] as! String? {
+            errorMessage = errorDescription
+            if let recoverySuggestion = error.userInfo[NSLocalizedRecoverySuggestionErrorKey] as! String? {
+                errorMessage! += " " + recoverySuggestion
+            }
+        } else {
+            errorMessage = error.userInfo[NSLocalizedRecoverySuggestionErrorKey] as! String?
+        }
+        var message = error.userInfo["UIAlertControllerMessage"] as! String? ?? errorMessage
+        if title == nil && message == nil { message = error.localizedDescription }
+        return UIAlertController.alert(title: title, message: message, handler: handler)
     }
 
     public static func confirm(title title: String?, message: String?, handler: (UIAlertAction) -> Void) -> UIAlertController {
