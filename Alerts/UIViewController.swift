@@ -9,16 +9,11 @@ public func topmostViewController() -> UIViewController {
 }
 
 public func alert(title title: String?, message: String?, handler: ((UIAlertAction) -> Void)? = nil) {
-    let alert = UIAlertController.alert(title: title, message: message, handler: handler)
-    topmostViewController().presentViewController(alert, animated: true, completion: nil)
-}
-
-public func alertError(error: NSError, handler: ((UIAlertAction) -> Void)? = nil) {
-    let alert = UIAlertController.alertError(error, handler: handler)
+    let alert = UIAlertController.OKAlert(title: title, message: message, handler: handler)
     topmostViewController().presentViewController(alert, animated: true, completion: nil)
 }
 
 public func confirm(title title: String?, message: String?, handler: (UIAlertAction) -> Void) {
-    let alert = UIAlertController.confirm(title: title, message: message, handler: handler)
+    let alert = UIAlertController.yesNoAlert(title: title, message: message, handler: handler)
     topmostViewController().presentViewController(alert, animated: true, completion: nil)
 }
