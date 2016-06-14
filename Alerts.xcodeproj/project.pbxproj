@@ -10,12 +10,27 @@
 		D24DD6DE1C9E2E0C0060A9A6 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DD6DD1C9E2E0C0060A9A6 /* UIAlertController.swift */; };
 		D24DD6E01C9E2E4D0060A9A6 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DD6DF1C9E2E4D0060A9A6 /* UIViewControllerTests.swift */; };
 		D24DD6E21C9E33880060A9A6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DD6E11C9E33880060A9A6 /* Helpers.swift */; };
+		D25348EF1D1033A10048DC07 /* UIHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25348EC1D1033900048DC07 /* UIHelper.framework */; };
 		D29E73A91C9DCD4D0098021A /* Alerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29E739E1C9DCD4D0098021A /* Alerts.framework */; };
 		D29E73AE1C9DCD4D0098021A /* UIAlertControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29E73AD1C9DCD4D0098021A /* UIAlertControllerTests.swift */; };
 		D29E73B91C9DCD6F0098021A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29E73B81C9DCD6F0098021A /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D25348EB1D1033900048DC07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25348E61D1033900048DC07 /* UIHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D25348B01D0EF1310048DC07;
+			remoteInfo = UIHelper;
+		};
+		D25348ED1D1033900048DC07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25348E61D1033900048DC07 /* UIHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D25348BA1D0EF1310048DC07;
+			remoteInfo = UIHelperTests;
+		};
 		D29E73AA1C9DCD4D0098021A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D29E73951C9DCD4D0098021A /* Project object */;
@@ -30,6 +45,7 @@
 		D24DD6DF1C9E2E4D0060A9A6 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		D24DD6E11C9E33880060A9A6 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D24DD6E31C9E37E00060A9A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D25348E61D1033900048DC07 /* UIHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIHelper.xcodeproj; path = ../UIHelper/UIHelper.xcodeproj; sourceTree = "<group>"; };
 		D29E739E1C9DCD4D0098021A /* Alerts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alerts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D29E73A31C9DCD4D0098021A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D29E73A81C9DCD4D0098021A /* AlertsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25348EF1D1033A10048DC07 /* UIHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,11 +74,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D25348E51D10335A0048DC07 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D25348E61D1033900048DC07 /* UIHelper.xcodeproj */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		D25348E71D1033900048DC07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25348EC1D1033900048DC07 /* UIHelper.framework */,
+				D25348EE1D1033900048DC07 /* UIHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D29E73941C9DCD4D0098021A = {
 			isa = PBXGroup;
 			children = (
 				D29E73A01C9DCD4D0098021A /* Alerts */,
 				D29E73AC1C9DCD4D0098021A /* AlertsTests */,
+				D25348E51D10335A0048DC07 /* Libraries */,
 				D29E739F1C9DCD4D0098021A /* Products */,
 				D24DD6E31C9E37E00060A9A6 /* README.md */,
 			);
@@ -174,6 +209,12 @@
 			mainGroup = D29E73941C9DCD4D0098021A;
 			productRefGroup = D29E739F1C9DCD4D0098021A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D25348E71D1033900048DC07 /* Products */;
+					ProjectRef = D25348E61D1033900048DC07 /* UIHelper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D29E739D1C9DCD4D0098021A /* Alerts */,
@@ -181,6 +222,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D25348EC1D1033900048DC07 /* UIHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIHelper.framework;
+			remoteRef = D25348EB1D1033900048DC07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25348EE1D1033900048DC07 /* UIHelperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIHelperTests.xctest;
+			remoteRef = D25348ED1D1033900048DC07 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D29E739C1C9DCD4D0098021A /* Resources */ = {
