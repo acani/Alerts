@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D24DD6DE1C9E2E0C0060A9A6 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DD6DD1C9E2E0C0060A9A6 /* UIAlertController.swift */; };
-		D24DD6E01C9E2E4D0060A9A6 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DD6DF1C9E2E4D0060A9A6 /* UIViewControllerTests.swift */; };
 		D24DD6E21C9E33880060A9A6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24DD6E11C9E33880060A9A6 /* Helpers.swift */; };
 		D25348EF1D1033A10048DC07 /* UIHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25348EC1D1033900048DC07 /* UIHelper.framework */; };
 		D29E73A91C9DCD4D0098021A /* Alerts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D29E739E1C9DCD4D0098021A /* Alerts.framework */; };
@@ -42,7 +41,6 @@
 
 /* Begin PBXFileReference section */
 		D24DD6DD1C9E2E0C0060A9A6 /* UIAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
-		D24DD6DF1C9E2E4D0060A9A6 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		D24DD6E11C9E33880060A9A6 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D24DD6E31C9E37E00060A9A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D25348E61D1033900048DC07 /* UIHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIHelper.xcodeproj; path = ../UIHelper/UIHelper.xcodeproj; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			children = (
 				D24DD6E11C9E33880060A9A6 /* Helpers.swift */,
 				D29E73AD1C9DCD4D0098021A /* UIAlertControllerTests.swift */,
-				D24DD6DF1C9E2E4D0060A9A6 /* UIViewControllerTests.swift */,
 				D29E73AF1C9DCD4D0098021A /* Info.plist */,
 			);
 			path = AlertsTests;
@@ -272,7 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D24DD6E21C9E33880060A9A6 /* Helpers.swift in Sources */,
-				D24DD6E01C9E2E4D0060A9A6 /* UIViewControllerTests.swift in Sources */,
 				D29E73AE1C9DCD4D0098021A /* UIAlertControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

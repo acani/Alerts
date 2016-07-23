@@ -6,38 +6,26 @@ Setup: [How to add a Git repository to your Xcode project][1]
 
 Usage:
 
-* `UIViewController.alert()`
+* `UIViewController.alertTitle(_:message:)`
 
     ```swift
-    alert(title: "Alert", message: "This is an alert with an OK button.")
+    alertTitle("Alert", message: "This is an alert with an OK button.")
     ```
 
     ```swift
-    alert(title: "Alert", message: "This is an alert with an OK button.") { _ in
+    alertTitle("Alert", message: "This is an alert with an OK button.") { _ in
         // Code here runs after the user has tapped OK.
     }
     ```
 
-* `UIViewController.alertError()`
+* `UIViewController.confirmTitle(_:message:)`
 
     ```swift
-    alertError(error: error)
+    confirmTitle("Confirm", message: "This is an alert with No & Yes buttons.")
     ```
 
     ```swift
-    alertError(error: error) { _ in
-        // Code here runs after the user has tapped OK.
-    }
-    ```
-
-* `UIViewController.confirm()`
-
-    ```swift
-    confirm(title: "Confirm", message: "This is an alert with No & Yes buttons.")
-    ```
-
-    ```swift
-    confirm(title: "Confirm", message: "This is an alert with No & Yes buttons.") { _ in
+    confirmTitle("Confirm", message: "This is an alert with No & Yes buttons.") { _ in
         // Code here runs after the user has tapped Yes.
     }
     ```
