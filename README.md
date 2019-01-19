@@ -14,7 +14,7 @@ Usage:
 
     ```swift
     alertTitle("Alert", message: "This is an alert with an OK button.") { _ in
-        // Code here runs after the user has tapped OK.
+      // Code here runs after the user has tapped OK.
     }
     ```
 
@@ -26,7 +26,7 @@ Usage:
 
     ```swift
     confirmTitle("Confirm", message: "This is an alert with No & Yes buttons.") { _ in
-        // Code here runs after the user has tapped Yes.
+      // Code here runs after the user has tapped Yes.
     }
     ```
 
