@@ -200,7 +200,7 @@
 			};
 			buildConfigurationList = D29E73981C9DCD4D0098021A /* Build configuration list for PBXProject "Alerts" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
