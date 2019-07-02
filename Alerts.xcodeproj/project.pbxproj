@@ -190,7 +190,7 @@
 				TargetAttributes = {
 					D29E739D1C9DCD4D0098021A = {
 						CreatedOnToolsVersion = 7.2.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					D29E73A71C9DCD4D0098021A = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -413,7 +413,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -432,7 +432,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.acani.Alerts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
