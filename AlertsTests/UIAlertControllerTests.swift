@@ -3,10 +3,12 @@ import Alerts
 
 class UIAlertControllerTests: XCTestCase {
   func testOKAlert() {
-    assertOKAlert(UIAlertController.OKAlert(title: title, message: message))
+    let alert = UIAlertController.OKAlert(title: title, message: message)
+    assertOKAlert(alert)
   }
 
   func testConfirm() {
-    assertYesNoAlert(UIAlertController.yesNoAlert(title: title, message: message, handler: { _ in }))
+    let alert = UIAlertController.yesNoAlert(title: title, message: message, handler: { _ in })
+    assertYesNoAlert(alert)
   }
 }
